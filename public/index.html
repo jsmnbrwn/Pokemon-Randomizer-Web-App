@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameLayout">
+        <div class="newGameBtn">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div class="pointsBox">
+            <h2>Points: <span id="pointsDisplay">-</span></h2>
+        </div>
+        <div class="hintsPanel">
+            <button onclick="getHint(1,this)" data-hint="1">Height -2</button>
+            <button onclick="getHint(2,this)" data-hint="2">Weight -2</button>
+            <button onclick="getHint(3,this)" data-hint="3">Number of Types -2</button>
+            <button onclick="getHint(4,this)" data-hint="4">Type(s) -6</button>
+            <button onclick="getHint(5,this)" data-hint="5">Abilities -5</button>
+            <button onclick="getHint(13,this)" data-hint="13">Generation -4</button>
+        </div>
+        <div class="spriteBox">
+            <img id="spriteImage" src="" alt="Pokemon Sprite" style="display:none;">
+        </div>
+        <div class="statPanel">
+            <button onclick="getHint(7,this)" data-hint="7">HP -1</button>
+            <button onclick="getHint(8,this)" data-hint="8">Atk -1</button>
+            <button onclick="getHint(9,this)" data-hint="9">Def -1</button>
+            <button onclick="getHint(10,this)" data-hint="10">SpAtk -1</button>
+            <button onclick="getHint(11,this)" data-hint="11">SpDef -1</button>
+            <button onclick="getHint(12,this)" data-hint="12">Speed -1</button>
+        </div>
+        <div class="genPokedex">
+            <button onclick="getHint(6,this)" data-hint="6">Sprite -15</button>
+            <button onclick="getHint(14,this)" data-hint="14">Pokedex Entry -8</button>
+        </div>
+        <input class="typeBar" type="text" id="guessBox" placeholder="Enter your guess" disabled>
+        <div class="submitBtn">
+            <button id="submitGuessBtn">Submit</button>
+        </div>
+        <div class="concedeBtn">
+            <button onclick="concede()"id="concedeGuessBtn">Concede</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
