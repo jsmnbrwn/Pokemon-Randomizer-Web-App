@@ -11,10 +11,13 @@ Guess the Pokémon when you think you know it.
 ### Requirements
 Node.js (includes npm)#
 
+
+```bash
 git clone https://github.com/YOUR-USERNAME/REPO-NAME.git
 cd REPO-NAME
 npm install
 node server.js
+```
 
 ### Built with
 Node.js and Express
