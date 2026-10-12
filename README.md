@@ -13,8 +13,8 @@ Node.js (includes npm)#
 
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/REPO-NAME.git
-cd REPO-NAME
+git clone [https://github.com/YOUR-USERNAME/REPO-NAME.git](https://github.com/jsmnbrwn/Pokemon-Randomizer-Web-App)
+cd Pokemon-Randomzer-Web-App
 npm install
 node server.js
 ```
